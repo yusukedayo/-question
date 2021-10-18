@@ -1,9 +1,9 @@
-
 ###questions
   name        data          others
 * title       string       null: false
 * body        text         null: false
 * user_id     string       null: false
+* status      boolean      default:false  null: false
 
 ###users
   name                  data          others
@@ -13,7 +13,15 @@
 * password_digest      string        null:false
 * admin                boolean      default:false  null:false
 
+###answer
+  name                  data          others
+* answer                text        null:false
+* user_id              string        
+* question_id          string        null:false
+
+
 usersとはquestionsと１対多の関係にある。
 
 # メモ
 * booleanとは一般的には真と偽のような2つの状態を表すデータ型のこと。
+
